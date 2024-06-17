@@ -1,3 +1,2 @@
 # Postgres
-![lineatiempo] (https://github.com/Utopiared/Postgres/assets/156848411/20b7b142-967b-4797-944f-8a9ba2809f4e)
-
+![IMAGEN LINEA DE TIEMPO](https://github.com/Utopiared/Postgres/assets/156848411/a8869aa8-176c-46c9-b10a-47c1c7df63ca)
