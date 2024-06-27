@@ -187,11 +187,12 @@ END;
 # Gestión de usuarios
 metodo para generar el rol 
 
-![alt text](image.png)
-
-
-
-
+![se crea rol](image.png)
+![se crea usuario](image-1.png)
+![se designa contraseña](image-2.png)
+![se designa rol](image-4.png)
+![el usuario consulta](image-5.png)
+![se le otorga el permiso a la dbgeolocalizacion](image-6.png)
 
 
 
