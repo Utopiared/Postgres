@@ -8,8 +8,6 @@ Autora: Aura Nicte-Ha Pech Reyes.
 ### Archivo de BACKUP de la base de datos
 
 
-![LA DIRECCIÓN EXCLUSIVA](https://github.com/Utopiared/Postgres/assets/156848411/a8869aa8-176c-46c9-b10a-47c1c7df63ca)
-
 ### Descripción de la base de datos
 
 La base de datos del proyecto de Geolocalización surge de la necesidad de dar seguridad al personal de la Guardia Nacional en actividades operativas, el proyecto no previene delitos, sin embargo teniendo la localización de personas que se encuentran adscritas a esta insitución, se podrá tener un control de seguridad con un aplicativo web, en el cuál el personal podrá ser monitoreado voluntariamente a través de una plataforma web su ubicación en tiempo real, con ayuda de la base datos, consultar su geolocalización, latitud, longitud, entre otros datos importantes que se almacenarán en las tablas creadas.
