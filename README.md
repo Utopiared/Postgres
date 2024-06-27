@@ -185,6 +185,19 @@ END;
 # Diseño de la base de datos
 
 # Gestión de usuarios
+metodo para generar el rol 
+
+![alt text](image.png)
+
+
+
+
+
+
+
+
+
+
 
 # Creando una copia de seguridad
 
