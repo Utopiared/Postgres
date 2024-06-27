@@ -7,7 +7,7 @@ Autora: Aura Nicte-Ha Pech Reyes.
 
 ### Archivo de BACKUP de la base de datos
 
-"C:\Users\damfa\Downloads\cursopostgres\bd_geolocalizacion.sql"
+ "C:\Users\damfa\Downloads\cursopostgres\bd_geolocalizacion.sql"
 
 ### Descripción de la base de datos
 
