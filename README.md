@@ -32,7 +32,7 @@ La base de datos del proyecto de Geolocalización surge de la necesidad de dar s
 ![Diagrama](https://github.com/Utopiared/Postgres/assets/156848411/fd56c582-9515-41cc-93a6-232a784c7d55)
 
 
-# Generacion de base de datos 
+# Generación de base de datos 
 
 GENERACIÓN DE TABLAS EN BASE DE DATOS.
 
@@ -188,16 +188,17 @@ END;
 metodo para generar el rol 
 
 ![se crea rol](image.png)
+se crea el rol
 ![se crea usuario](image-1.png)
+se crea usuario
 ![se designa contraseña](image-2.png)
+se designa contraseña
 ![se designa rol](image-4.png)
+se designa rol
 ![el usuario consulta](image-5.png)
+el usuario consulta
 ![se le otorga el permiso a la dbgeolocalizacion](image-6.png)
-
-
-
-
-
+se le otorga el permiso a la dbgeolocalizacion
 
 
 # Creando una copia de seguridad
