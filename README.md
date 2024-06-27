@@ -34,6 +34,147 @@ La base de datos del proyecto de Geolocalización surge de la necesidad de dar s
 
 # Generacion de base de datos 
 
+GENERACIÓN DE TABLAS EN BASE DE DATOS.
+
+BEGIN;
+
+
+CREATE TABLE IF NOT EXISTS ubicacionpersona.cat_area_laboral
+(
+    direccion_general_inteligencia character varying COLLATE pg_catalog."default" NOT NULL,
+    direccion_general_investigacion character varying COLLATE pg_catalog."default" NOT NULL,
+    direccion_general_seguridad_carreteras_instalaciones character varying COLLATE pg_catalog."default" NOT NULL,
+    direccion_general_cientifica character varying COLLATE pg_catalog."default" NOT NULL,
+    direccion_general_antidrogas character varying COLLATE pg_catalog."default" NOT NULL,
+    direccion_general_transportes_aereos character varying COLLATE pg_catalog."default" NOT NULL,
+    direccion_general_seguridad_procesal character varying COLLATE pg_catalog."default" NOT NULL,
+    id_nombre_laboral integer NOT NULL DEFAULT nextval('ubicacionpersona.tbl_area_laboral_id_nombre_laboral_seq'::regclass),
+    id_personas integer NOT NULL,
+    CONSTRAINT tbl_area_laboral_pkey PRIMARY KEY (id_nombre_laboral)
+);
+
+CREATE TABLE IF NOT EXISTS ubicacionpersona.tbl_acceso_usuario
+(
+    contrasena character varying COLLATE pg_catalog."default" NOT NULL,
+    salt character varying COLLATE pg_catalog."default" NOT NULL,
+    nombre_usuario character varying COLLATE pg_catalog."default" NOT NULL,
+    id_acceso_usuario serial NOT NULL,
+    id_persona serial NOT NULL,
+    CONSTRAINT id_acceso_usuario PRIMARY KEY (id_acceso_usuario)
+);
+
+CREATE TABLE IF NOT EXISTS ubicacionpersona.tbl_bitacora_acceso
+(
+    id_usuario integer NOT NULL,
+    accion character varying COLLATE pg_catalog."default" NOT NULL,
+    id_bitacora integer NOT NULL,
+    id_accesousu integer NOT NULL,
+    id_bitacoraacceso serial NOT NULL,
+    id_acceso_usuario integer NOT NULL,
+    fecha date NOT NULL,
+    hora character varying COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT tbl_bitacora_acceso_pkey PRIMARY KEY (id_bitacoraacceso)
+);
+
+CREATE TABLE IF NOT EXISTS ubicacionpersona.tbl_datos_telefono
+(
+    marca character varying COLLATE pg_catalog."default" NOT NULL,
+    imei character varying COLLATE pg_catalog."default" NOT NULL,
+    color character varying COLLATE pg_catalog."default" NOT NULL,
+    modelo character varying COLLATE pg_catalog."default" NOT NULL,
+    descripcion character varying COLLATE pg_catalog."default" NOT NULL,
+    id_datos_telefono serial NOT NULL,
+    id_personas integer NOT NULL,
+    CONSTRAINT tbl_datos_telefono_pkey PRIMARY KEY (id_datos_telefono)
+);
+
+CREATE TABLE IF NOT EXISTS ubicacionpersona.tbl_liga_gps_personas
+(
+    id_persona_asignada integer NOT NULL,
+    id_gps integer NOT NULL,
+    id_estatus boolean NOT NULL,
+    id_status integer NOT NULL,
+    id_ligagpspersona serial NOT NULL,
+    id_datos_telefono integer NOT NULL,
+    CONSTRAINT tbl_liga_gps_personas_pkey PRIMARY KEY (id_ligagpspersona)
+);
+
+CREATE TABLE IF NOT EXISTS ubicacionpersona.tbl_personas
+(
+    nombre character varying COLLATE pg_catalog."default" NOT NULL,
+    apellido_paterno character varying COLLATE pg_catalog."default" NOT NULL,
+    apellido_materno character varying COLLATE pg_catalog."default" NOT NULL,
+    curp character varying(20) COLLATE pg_catalog."default" NOT NULL,
+    rfc character varying(14) COLLATE pg_catalog."default" NOT NULL,
+    fecha_nacimiento date NOT NULL,
+    id_persona serial NOT NULL,
+    numero_celular numeric NOT NULL,
+    CONSTRAINT tbl_personas_pkey PRIMARY KEY (id_persona)
+);
+
+CREATE TABLE IF NOT EXISTS ubicacionpersona.tbl_ubicacion_dispositivo
+(
+    latitud double precision NOT NULL,
+    longitud double precision NOT NULL,
+    id_gps integer NOT NULL,
+    id_imei integer NOT NULL,
+    id_ubicaciondispositivo serial NOT NULL,
+    id_liga integer NOT NULL,
+    hora character varying COLLATE pg_catalog."default" NOT NULL,
+    fecha date NOT NULL,
+    CONSTRAINT tbl_ubicacion_dispositivo_pkey PRIMARY KEY (id_ubicaciondispositivo)
+);
+
+ALTER TABLE IF EXISTS ubicacionpersona.cat_area_laboral
+    ADD CONSTRAINT fk_id_personas FOREIGN KEY (id_personas)
+    REFERENCES ubicacionpersona.tbl_personas (id_persona) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+
+
+ALTER TABLE IF EXISTS ubicacionpersona.tbl_bitacora_acceso
+    ADD CONSTRAINT fk_id_acceso_usuario FOREIGN KEY (id_acceso_usuario)
+    REFERENCES ubicacionpersona.tbl_acceso_usuario (id_acceso_usuario) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+CREATE INDEX IF NOT EXISTS fki_fk_id_acceso_usuario
+    ON ubicacionpersona.tbl_bitacora_acceso(id_acceso_usuario);
+
+
+ALTER TABLE IF EXISTS ubicacionpersona.tbl_datos_telefono
+    ADD CONSTRAINT fk_id_persona FOREIGN KEY (id_personas)
+    REFERENCES ubicacionpersona.tbl_personas (id_persona) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+CREATE INDEX IF NOT EXISTS fki_fk_id_personas
+    ON ubicacionpersona.tbl_datos_telefono(id_personas);
+
+
+ALTER TABLE IF EXISTS ubicacionpersona.tbl_liga_gps_personas
+    ADD CONSTRAINT fk_id_datos_telefono FOREIGN KEY (id_datos_telefono)
+    REFERENCES ubicacionpersona.tbl_datos_telefono (id_datos_telefono) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+CREATE INDEX IF NOT EXISTS fki_fk_id_datos_telefono
+    ON ubicacionpersona.tbl_liga_gps_personas(id_datos_telefono);
+
+
+ALTER TABLE IF EXISTS ubicacionpersona.tbl_ubicacion_dispositivo
+    ADD CONSTRAINT fk_id_liga_gps FOREIGN KEY (id_liga)
+    REFERENCES ubicacionpersona.tbl_liga_gps_personas (id_ligagpspersona) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+CREATE INDEX IF NOT EXISTS fki_fk_id_liga_gps
+    ON ubicacionpersona.tbl_ubicacion_dispositivo(id_liga);
+
+END;
+
+
 
 # Consultas SQL
 
