@@ -7,6 +7,7 @@ Autora: Aura Nicte-Ha Pech Reyes.
 
 ### Archivo de BACKUP de la base de datos
 
+"C:\Users\damfa\Downloads\cursopostgres\bd_geolocalizacion.sql"
 
 ### Descripción de la base de datos
 
@@ -26,12 +27,12 @@ La base de datos del proyecto de Geolocalización surge de la necesidad de dar s
     6.- 2020: PostgreSQL 13 (optimización de índices, nuevas características de seguridad)
 
 
-# Diagrama Entidad - Relacion 
+# Diagrama Entidad - Relación 
 
 ![Diagrama](https://github.com/Utopiared/Postgres/assets/156848411/fd56c582-9515-41cc-93a6-232a784c7d55)
 
 
-# Generacion de base de datos comunicaciones
+# Generacion de base de datos 
 
 
 # Consultas SQL
