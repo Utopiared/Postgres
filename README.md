@@ -197,56 +197,56 @@ END;
 Método para generar el ROL 
 
 
-1.Se crea el rol
+1. Se crea el rol
 ![se crea rol](image.png)
 
-2.Se crea usuario
+2. Se crea usuario
 ![se crea usuario](image-1.png)
 
-3.Se designa contraseña
+3. Se designa contraseña
 ![se designa contraseña](image-2.png)
 
-4.Se designa rol
+4. Se designa rol
 ![se designa rol](image-4.png)
 
-5.El usuario consulta
+5. El usuario consulta
 ![el usuario consulta](image-5.png)
 
-6.Se le otorga el permiso a la dbgeolocalizacion
+6. Se le otorga el permiso a la dbgeolocalizacion
 ![se le otorga el permiso a la dbgeolocalizacion](image-6.png)
 
 
 # CREANDO UNA COPIA DE SEGURIDAD
 
-Para generar una copia de seguridad, nos dirigimos a la parte de la selección de BACKUP
+1. Para generar una copia de seguridad, nos dirigimos a la parte de la selección de BACKUP
 ![se realiza backup](image-7.png)
 
 
-2.Se selecciona la carpeta donde se guardará y se designa un nombre
+2. Se selecciona la carpeta donde se guardará y se designa un nombre
 ![alt text](image-8.png)
 
 
-3.Se selecciona el formato "PLAIN" 
+3. Se selecciona el formato "PLAIN" 
 ![alt text](image-9.png)
 
 
-4.Se selecciona el ENCODING "UTF8"
+4. Se selecciona el ENCODING "UTF8"
 ![alt text](image-10.png)
 
 
-5.Se selecciona el ROLENAME
+5. Se selecciona el ROLENAME
 ![alt text](image-11.png)
 
 
-6.Seleccionamos las opciones a elegir de lo que se quiere guardar de la base de datos.
+6. Seleccionamos las opciones a elegir de lo que se quiere guardar de la base de datos.
 ![alt text](image-12.png)
 
 
-7.Seleccionamos todo lo que se quiere guardar
+7. Seleccionamos todo lo que se quiere guardar
 ![alt text](image-13.png)
 
 
-8.Se genera el respaldo
+8. Se genera el respaldo
 ![alt text](image-14.png)
 
 
