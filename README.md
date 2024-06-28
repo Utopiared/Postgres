@@ -9,6 +9,9 @@ _**PROYECTO GEOLOCALIZACIÓN**_
 
  "C:\Users\damfa\Downloads\cursopostgres\bd_geolocalizacion.sql"
 
+
+ ![mokaro](image-22.png)
+
 ### DESCRIPCIÓN DE LA BASE DE DATOS
 
 La base de datos del proyecto de Geolocalización surge de la necesidad de dar seguridad al personal de la Guardia Nacional en actividades operativas, el proyecto no previene delitos, sin embargo al tener una herramienta como esta, tendremos un control seguro de que el personal que pueda tener un percance importante, se le pueda brindar ayuda, con ayuda de la base datos, consultar su geolocalización, latitud, longitud, entre otros datos importantes que se almacenarán en las tablas creadas.
