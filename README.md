@@ -203,6 +203,25 @@ se le otorga el permiso a la dbgeolocalizacion
 
 # Creando una copia de seguridad
 
+Para generar una copia de seguridad, nos dirigimos a la parte de la selección de BACKUP
+![se realiza backup](image-7.png)
+se selecciona la carpeta donde se guardará y se designa un nombre
+![alt text](image-8.png)
+se selecciona el formato "PLAIN" 
+![alt text](image-9.png)
+se selecciona el ENCODING "UTF8"
+![alt text](image-10.png)
+se selecciona el ROLENAME
+![alt text](image-11.png)
+seleccionamos los permisos
+![alt text](image-12.png)
+seleccionamos todo lo que se quiere guardar
+![alt text](image-13.png)
+se genera el respaldo
+![alt text](image-14.png)
+
+
+
 # Optimizando consultas
 
 # Preparando un proceso de réplica y alta disponibilidad
