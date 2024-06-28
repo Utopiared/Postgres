@@ -182,42 +182,51 @@ END;
 
 # Configuración del entorno SQL
 
+
+
+
+
 # Diseño de la base de datos
+
+
+
+
+
 
 # Gestión de usuarios
 metodo para generar el rol 
 
 ![se crea rol](image.png)
-se crea el rol
+1.Se crea el rol
 ![se crea usuario](image-1.png)
-se crea usuario
+2.Se crea usuario
 ![se designa contraseña](image-2.png)
-se designa contraseña
+3.Se designa contraseña
 ![se designa rol](image-4.png)
-se designa rol
+4.Se designa rol
 ![el usuario consulta](image-5.png)
-el usuario consulta
+5.El usuario consulta
 ![se le otorga el permiso a la dbgeolocalizacion](image-6.png)
-se le otorga el permiso a la dbgeolocalizacion
+6.Se le otorga el permiso a la dbgeolocalizacion
 
 
 # Creando una copia de seguridad
 
-Para generar una copia de seguridad, nos dirigimos a la parte de la selección de BACKUP
+Para generar una copia de seguridad, nos dirigimos a la 1.Parte de la selección de BACKUP
 ![se realiza backup](image-7.png)
-se selecciona la carpeta donde se guardará y se designa un nombre
+2.Se selecciona la carpeta donde se guardará y se designa un nombre
 ![alt text](image-8.png)
-se selecciona el formato "PLAIN" 
+3.Se selecciona el formato "PLAIN" 
 ![alt text](image-9.png)
-se selecciona el ENCODING "UTF8"
+4.Se selecciona el ENCODING "UTF8"
 ![alt text](image-10.png)
-se selecciona el ROLENAME
+5.Se selecciona el ROLENAME
 ![alt text](image-11.png)
-seleccionamos los permisos
+6.Seleccionamos las opciones a elegir de lo que se quiere guardar de la base de datos.
 ![alt text](image-12.png)
-seleccionamos todo lo que se quiere guardar
+7.Seleccionamos todo lo que se quiere guardar
 ![alt text](image-13.png)
-se genera el respaldo
+8.Se genera el respaldo
 ![alt text](image-14.png)
 
 
