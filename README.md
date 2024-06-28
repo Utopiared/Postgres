@@ -1,5 +1,5 @@
 # Postgres
-**PROYECTO GEOLOCALIZACIÓN**
+_**PROYECTO GEOLOCALIZACIÓN**_
 
 ![policiacool](https://github.com/Utopiared/Postgres/assets/156848411/e25357c9-5d55-4666-be10-214dd14eac4f)
 
@@ -182,8 +182,8 @@ END;
 
 
 # CONFIGURACIÓN DEL ENTORNO SQL
-Se abre la terminal en SQL SHELL
-
+Se abre la terminal en SQL SHELL y se genera linea por linea 
+![alt text](image-16.png)
 
 
 
