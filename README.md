@@ -29,6 +29,14 @@ La base de datos del proyecto de Geolocalización surge de la necesidad de dar s
 # DISEÑO DE LA BASE DE DATOS:
 
 
+*tbl_acceso_usuario:* en esta tabla se almacenan los datos de acceso de las personas que ya se registraron previamente.
+*tbl_bitacora_acceso:*  se prevee que en esta tabla se lleve un registro de cuantas veces el usuario accede al aplicativo, hora fecha y que acciones tuvo en el aplicativo.
+*tbl_datos_telefono:* en esta tabla se almacenan los datos del telefono del los usuarios que ya se registraron previamente.
+*tbl_liga_gps_personas:* en esta tabla se vé el estatus activo e inactivo del usuario.
+*tbl_personas:* en esta tabla el usuario registra datos personales.
+*tbl_ubicacion_dispositivo:* en esta tabla se almacenan la ubicación exacta del dispositivo.
+*cat_area_laboral:* el catálogo se epecifica en que Dirección se encuentran.
+
 # DIAGRAMA ENTIDAD - RELACIÓN 
 
 ![Diagrama](https://github.com/Utopiared/Postgres/assets/156848411/fd56c582-9515-41cc-93a6-232a784c7d55)
@@ -253,15 +261,11 @@ Método para generar el ROL
 
 # PREPARANDO UN PROCESO DE RÉPLICA Y ALTA DISPONIBILIDAD
 
-
-
+Es importante que el proyecto tenga replicas, ya que los datos que se emplean son privadas y será de entradas frecuentes por lo que este proceso permite tener copias actualizadas de la base de datos en servidores secundarios, si el servidor principal falla, los secundarios pueden hacer el trabajo que se requiere.
 
 
 
 # PREPARANDO EL MONITOREO
-
-
-
 
 
 
