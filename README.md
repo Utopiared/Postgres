@@ -1,9 +1,9 @@
 # Postgres
-PROYECTO GEOLOCALIZACIÓN
+**PROYECTO GEOLOCALIZACIÓN**
 
 ![policiacool](https://github.com/Utopiared/Postgres/assets/156848411/e25357c9-5d55-4666-be10-214dd14eac4f)
 
-Autora: Aura Nicte-Ha Pech Reyes.
+*Autora: Aura Nicte-Ha Pech Reyes.*
 
 ### ARCHIVO DE BACKUP DE LA BASE DE DATOS
 
@@ -36,6 +36,7 @@ La base de datos del proyecto de Geolocalización surge de la necesidad de dar s
 
 GENERACIÓN DE TABLAS EN BASE DE DATOS.
 
+```sql
 BEGIN;
 
 
@@ -173,7 +174,7 @@ CREATE INDEX IF NOT EXISTS fki_fk_id_liga_gps
     ON ubicacionpersona.tbl_ubicacion_dispositivo(id_liga);
 
 END;
-
+```
 
 
 # CONSULTAS SQL
@@ -181,7 +182,7 @@ END;
 
 
 # CONFIGURACIÓN DEL ENTORNO SQL
-
+Se abre la terminal en SQL SHELL
 
 
 
@@ -253,8 +254,23 @@ Método para generar el ROL
 
 # OPTIMIZANDO CONSULTAS
 
+
+
+
+
 # PREPARANDO UN PROCESO DE RÉPLICA Y ALTA DISPONIBILIDAD
 
+
+
+
+
+
 # PREPARANDO EL MONITOREO
+
+
+
+
+
+
 
 # MIGRACIÓN DE DATOS
