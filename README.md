@@ -11,7 +11,7 @@ _**PROYECTO GEOLOCALIZACIÓN**_
 
 ### DESCRIPCIÓN DE LA BASE DE DATOS
 
-La base de datos del proyecto de Geolocalización surge de la necesidad de dar seguridad al personal de la Guardia Nacional en actividades operativas, el proyecto no previene delitos, sin embargo teniendo la localización de personas que se encuentran adscritas a esta insitución, se podrá tener un control de seguridad con un aplicativo web, en el cuál el personal podrá ser monitoreado voluntariamente a través de una plataforma web su ubicación en tiempo real, con ayuda de la base datos, consultar su geolocalización, latitud, longitud, entre otros datos importantes que se almacenarán en las tablas creadas.
+La base de datos del proyecto de Geolocalización surge de la necesidad de dar seguridad al personal de la Guardia Nacional en actividades operativas, el proyecto no previene delitos, sin embargo al tener una herramienta como esta, tendremos un control seguro de que el personal que pueda tener un percanse importante, se le pueda brindar ayuda, con ayuda de la base datos, consultar su geolocalización, latitud, longitud, entre otros datos importantes que se almacenarán en las tablas creadas.
 
 
 # LINEA DE TIEMPO
@@ -25,6 +25,8 @@ La base de datos del proyecto de Geolocalización surge de la necesidad de dar s
     4.- 2010: PostgreSQL 9.0 (replicación streaming, Hot Standby)
     5.- 2016: PostgreSQL 9.6 (mejoras en paralelización de consultas)
     6.- 2020: PostgreSQL 13 (optimización de índices, nuevas características de seguridad)
+
+# DISEÑO DE LA BASE DE DATOS:
 
 
 # DIAGRAMA ENTIDAD - RELACIÓN 
@@ -181,17 +183,8 @@ END;
 
 
 
+
 # CONFIGURACIÓN DEL ENTORNO SQL
-Se abre la terminal en SQL SHELL y se genera linea por linea 
-![alt text](image-16.png)
-
-
-
-# DISEÑO DE LA BASE DE DATOS
-
-
-
-
 
 
 # GESTIÓN DE USUARIOS
