@@ -255,7 +255,9 @@ Método para generar el ROL
 
 # OPTIMIZANDO CONSULTAS
 
+![sin indice](image-17.png)
 
+![con inice](image-18.png)
 
 
 
