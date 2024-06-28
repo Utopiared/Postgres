@@ -194,7 +194,9 @@ END;
 
 
 # Gestión de usuarios
-metodo para generar el rol 
+Método para generar el ROL 
+
+
 1.Se crea el rol
 ![se crea rol](image.png)
 
@@ -218,18 +220,32 @@ metodo para generar el rol
 
 Para generar una copia de seguridad, nos dirigimos a la 1.Parte de la selección de BACKUP
 ![se realiza backup](image-7.png)
+
+
 2.Se selecciona la carpeta donde se guardará y se designa un nombre
 ![alt text](image-8.png)
+
+
 3.Se selecciona el formato "PLAIN" 
 ![alt text](image-9.png)
+
+
 4.Se selecciona el ENCODING "UTF8"
 ![alt text](image-10.png)
+
+
 5.Se selecciona el ROLENAME
 ![alt text](image-11.png)
+
+
 6.Seleccionamos las opciones a elegir de lo que se quiere guardar de la base de datos.
 ![alt text](image-12.png)
+
+
 7.Seleccionamos todo lo que se quiere guardar
 ![alt text](image-13.png)
+
+
 8.Se genera el respaldo
 ![alt text](image-14.png)
 
