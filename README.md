@@ -5,16 +5,16 @@ PROYECTO GEOLOCALIZACIÓN
 
 Autora: Aura Nicte-Ha Pech Reyes.
 
-### Archivo de BACKUP de la base de datos
+### ARCHIVO DE BACKUP DE LA BASE DE DATOS
 
  "C:\Users\damfa\Downloads\cursopostgres\bd_geolocalizacion.sql"
 
-### Descripción de la base de datos
+### DESCRIPCIÓN DE LA BASE DE DATOS
 
 La base de datos del proyecto de Geolocalización surge de la necesidad de dar seguridad al personal de la Guardia Nacional en actividades operativas, el proyecto no previene delitos, sin embargo teniendo la localización de personas que se encuentran adscritas a esta insitución, se podrá tener un control de seguridad con un aplicativo web, en el cuál el personal podrá ser monitoreado voluntariamente a través de una plataforma web su ubicación en tiempo real, con ayuda de la base datos, consultar su geolocalización, latitud, longitud, entre otros datos importantes que se almacenarán en las tablas creadas.
 
 
-# Linea de Tiempo
+# LINEA DE TIEMPO
 
 ![una linea bonita](https://github.com/Utopiared/Postgres/assets/156848411/541131ed-0e05-4243-a3a8-ae1f34e38f17)
 
@@ -27,12 +27,12 @@ La base de datos del proyecto de Geolocalización surge de la necesidad de dar s
     6.- 2020: PostgreSQL 13 (optimización de índices, nuevas características de seguridad)
 
 
-# Diagrama Entidad - Relación 
+# DIAGRAMA ENTIDAD - RELACIÓN 
 
 ![Diagrama](https://github.com/Utopiared/Postgres/assets/156848411/fd56c582-9515-41cc-93a6-232a784c7d55)
 
 
-# Generación de base de datos 
+# GENERACIÓN DE BASE DE DATOS 
 
 GENERACIÓN DE TABLAS EN BASE DE DATOS.
 
@@ -176,24 +176,24 @@ END;
 
 
 
-# Consultas SQL
+# CONSULTAS SQL
 
 
 
-# Configuración del entorno SQL
-
-
-
-
-
-# Diseño de la base de datos
+# CONFIGURACIÓN DEL ENTORNO SQL
 
 
 
 
 
+# DISEÑO DE LA BASE DE DATOS
 
-# Gestión de usuarios
+
+
+
+
+
+# GESTIÓN DE USUARIOS
 Método para generar el ROL 
 
 
@@ -216,9 +216,9 @@ Método para generar el ROL
 ![se le otorga el permiso a la dbgeolocalizacion](image-6.png)
 
 
-# Creando una copia de seguridad
+# CREANDO UNA COPIA DE SEGURIDAD
 
-Para generar una copia de seguridad, nos dirigimos a la 1.Parte de la selección de BACKUP
+Para generar una copia de seguridad, nos dirigimos a la parte de la selección de BACKUP
 ![se realiza backup](image-7.png)
 
 
@@ -251,10 +251,10 @@ Para generar una copia de seguridad, nos dirigimos a la 1.Parte de la selección
 
 
 
-# Optimizando consultas
+# OPTIMIZANDO CONSULTAS
 
-# Preparando un proceso de réplica y alta disponibilidad
+# PREPARANDO UN PROCESO DE RÉPLICA Y ALTA DISPONIBILIDAD
 
-# Preparando el monitoreo
+# PREPARANDO EL MONITOREO
 
-# Migración de datos
+# MIGRACIÓN DE DATOS
