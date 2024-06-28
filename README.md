@@ -195,19 +195,23 @@ END;
 
 # Gestión de usuarios
 metodo para generar el rol 
-
-![se crea rol](image.png)
 1.Se crea el rol
-![se crea usuario](image-1.png)
+![se crea rol](image.png)
+
 2.Se crea usuario
-![se designa contraseña](image-2.png)
+![se crea usuario](image-1.png)
+
 3.Se designa contraseña
-![se designa rol](image-4.png)
+![se designa contraseña](image-2.png)
+
 4.Se designa rol
-![el usuario consulta](image-5.png)
+![se designa rol](image-4.png)
+
 5.El usuario consulta
-![se le otorga el permiso a la dbgeolocalizacion](image-6.png)
+![el usuario consulta](image-5.png)
+
 6.Se le otorga el permiso a la dbgeolocalizacion
+![se le otorga el permiso a la dbgeolocalizacion](image-6.png)
 
 
 # Creando una copia de seguridad
