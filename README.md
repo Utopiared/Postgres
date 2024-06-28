@@ -189,11 +189,19 @@ END;
 
 # CONSULTAS SQL
 
+1. Consulta de la tbl_personas, donde se observa, solo el nombre, fecha_nacimiento y la curp.
 
+ ![alt text](image-19.png)
+
+2. la consulta cuenta cuántos registros de personas tienen una fecha de nacimiento dentro del rango dado.
+![alt text](image-20.png)
+
+
+3. La consulta es para obtener los modelos únicos de teléfonos
+![alt text](image-21.png)
 
 
 # CONFIGURACIÓN DEL ENTORNO SQL
-
 
 # GESTIÓN DE USUARIOS
 Método para generar el ROL 
