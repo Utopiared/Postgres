@@ -33,11 +33,23 @@ La base de datos del proyecto de Geolocalización surge de la necesidad de dar s
 
 
 *tbl_acceso_usuario:* en esta tabla se almacenan los datos de acceso de las personas que ya se registraron previamente.
+
+
 *tbl_bitacora_acceso:*  se prevee que en esta tabla se lleve un registro de cuantas veces el usuario accede al aplicativo, hora fecha y que acciones tuvo en el aplicativo.
+
+
 *tbl_datos_telefono:* en esta tabla se almacenan los datos del telefono del los usuarios que ya se registraron previamente.
+
+
 *tbl_liga_gps_personas:* en esta tabla se vé el estatus activo e inactivo del usuario.
+
+
 *tbl_personas:* en esta tabla el usuario registra datos personales.
+
+
 *tbl_ubicacion_dispositivo:* en esta tabla se almacenan la ubicación exacta del dispositivo.
+
+
 *cat_area_laboral:* el catálogo se epecifica en que Dirección se encuentran.
 
 # DIAGRAMA ENTIDAD - RELACIÓN 
@@ -280,7 +292,21 @@ Es importante que el proyecto tenga replicas, ya que los datos que se emplean so
 
 # PREPARANDO EL MONITOREO
 
+El monitoreo de bases de datos SQL Server es crucial para garantizar un rendimiento óptimo y resolver problemas,es util para este proyecto ya que roporcionaría información sobre uso de memoria, procesador, tráfico de red y actividad de disco.
+
+```sql
+SELECT * FROM pg_stat_activity;
+```
+
+![alt text](image-23.png)
 
 
+```sql
+SELECT * FROM pg_stat_database;
+```
+![alt text](image-24.png)
 
 # MIGRACIÓN DE DATOS
+
+
+Para este proyecto el migrar los datos garantiza que las aplicaciones sigan funcionando sin problemas, permitiría aprovechar las mejoras de rendimiento, seguridad, asegurando una transición fluida sería esencial para mantener un buen sistemas y una mejor adaptación.
